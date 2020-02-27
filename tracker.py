@@ -56,9 +56,6 @@ for l in logs:
             if 'https://shop.com/checkout' == location:
                 # клиент перешел по нашей ссылке
                 winners.append(client_id)
-
-                # очищаем кэш
-                del cache[client_id]
             else:
                 # внутреннее перемещение по сайту
                 # игнорируем
@@ -78,15 +75,3 @@ for l in logs:
         else:
             # Если клиент перешел не с нашей ссылки, он нам не интересен
             pass
-
-
-
-
-
-
-
-
-
-
-
-
